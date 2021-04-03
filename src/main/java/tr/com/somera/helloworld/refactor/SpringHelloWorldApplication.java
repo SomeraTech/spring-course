@@ -32,5 +32,7 @@ public class SpringHelloWorldApplication {
 
         MessageRenderer r = context.getBean("scRenderer", MessageRenderer.class);
         r.render();
+
+        MessageProvider provider = context.getBean("primitiveProvider", MessageProvider.class);
     }
 }

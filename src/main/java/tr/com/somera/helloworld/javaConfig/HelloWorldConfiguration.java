@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
+import org.springframework.context.annotation.Scope;
 import tr.com.somera.helloworld.common.BasicMessageRenderer;
 import tr.com.somera.helloworld.common.GenericMessageProvider;
 import tr.com.somera.helloworld.common.HelloWorldMessageProvider;
@@ -12,6 +13,7 @@ import tr.com.somera.helloworld.common.HelloWorldMessageProvider;
 @ImportResource(locations = {"classpath:spring/hello-world.xml"})
 public class HelloWorldConfiguration {
     @Bean
+    @Scope("prototype")
     HelloWorldMessageProvider primitiveProvider() {
         return new HelloWorldMessageProvider();
     }
