@@ -5,6 +5,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import tr.com.somera.helloworld.common.MessageProvider;
 import tr.com.somera.helloworld.common.MessageRenderer;
 
 public class Main {
@@ -22,5 +23,8 @@ public class Main {
                 new AnnotationConfigApplicationContext(StereotypeConfiguration.class);
         MessageRenderer renderer = context.getBean("newMessageRenderer", MessageRenderer.class);
         renderer.render();
+
+//        MessageProvider provider = context.getBean("genericProvider", MessageProvider.class);
+//        System.out.println(provider.getMessage());
     }
 }
