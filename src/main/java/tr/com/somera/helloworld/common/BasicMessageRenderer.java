@@ -1,4 +1,4 @@
-package tr.com.somera.helloworld;
+package tr.com.somera.helloworld.common;
 
 public class BasicMessageRenderer implements MessageRenderer {
     MessageProvider provider;
