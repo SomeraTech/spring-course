@@ -4,7 +4,7 @@ package tr.com.somera.helloworld.common;
 public class GenericMessageProvider implements MessageProvider {
     final String message;
 
-    GenericMessageProvider(String message) {
+    public GenericMessageProvider(String message) {
         this.message = message;
     }
 
