@@ -10,4 +10,7 @@
     <bean id="genericProvider" class="tr.com.somera.helloworld.common.GenericMessageProvider">
         <constructor-arg value="#{provider.message}"/>
     </bean>
+    <bean id="scProvider" class="tr.com.somera.helloworld.common.ScannerProvider" />
+    <bean id="scRenderer" class="tr.com.somera.helloworld.common.BasicMessageRenderer"
+        p:provider-ref="scProvider"/>
 </beans>

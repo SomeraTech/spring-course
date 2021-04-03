@@ -1,6 +1,5 @@
 package tr.com.somera.helloworld.common;
 
-import tr.com.somera.helloworld.common.MessageProvider;
 
 public class GenericMessageProvider implements MessageProvider {
     final String message;
