@@ -13,6 +13,18 @@
         <maven.compiler.target>15</maven.compiler.target>
     </properties>
 
+    <profiles>
+        <profile>
+            <id>profile1</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+        <profile>
+            <id>profile2</id>
+        </profile>
+    </profiles>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
