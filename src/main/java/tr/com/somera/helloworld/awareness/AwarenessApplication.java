@@ -9,5 +9,8 @@ public class AwarenessApplication {
                 new AnnotationConfigApplicationContext(AwarenessConfiguration.class);
         MessageProvider awareProvider = context.getBean("awareProvider", MessageProvider.class);
         System.out.println(awareProvider.getMessage());
+
+//        final DestroyBean destroyBean = context.getBean("destroyBean", DestroyBean.class);
+//        destroyBean.getBeans();
     }
 }
