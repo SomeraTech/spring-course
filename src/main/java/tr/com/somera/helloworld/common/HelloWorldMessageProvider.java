@@ -5,4 +5,8 @@ public class HelloWorldMessageProvider implements MessageProvider {
     public String getMessage() {
         return "Hello World!";
     }
+
+    public void init() {
+        System.out.println("HelloWorldMessageProvider - Initiated in java config");
+    }
 }
